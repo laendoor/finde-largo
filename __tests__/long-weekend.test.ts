@@ -1,9 +1,5 @@
 import dayjs from 'dayjs';
-import {
-  groupByCloseness,
-  longWeekendMap,
-  InfoDay,
-} from '../../src/long-weekend';
+import { groupByCloseness, longWeekendMap, InfoDay } from '../src/long-weekend';
 
 // ----------------------------------------------------------------------------------
 
