@@ -17,6 +17,8 @@
     "node": ">=18.15.0"
   },
   "scripts": {
+    "start": "node dist/src/index.js",
+    "build": "tsc",
     "dev": "ts-node src/index.ts",
     "test": "jest",
     "lint": "eslint --ext .js,.ts ./src ./__tests__",
