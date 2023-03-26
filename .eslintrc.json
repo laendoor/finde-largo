@@ -1,25 +1,26 @@
 {
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"ecmaVersion": 2016,
-		"sourceType": "module",
-		"project": "./tsconfig.eslint.json"
-	},
-	"env": {
-		"browser": true,
-		"es2021": true,
-		"node": true,
-		"jest/globals": true
-	},
-	"extends": [
-		"airbnb-base",
-		"airbnb-typescript/base",
-		"plugin:jest/recommended",
-		"prettier"
-	],
-	"overrides": [],
-	"plugins": ["@typescript-eslint", "import"],
-	"settings": {},
-	"ignorePatterns": [],
-	"rules": {}
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "project": "./tsconfig.eslint.json"
+  },
+  "env": {
+    "es2021": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:jest/recommended",
+    "prettier"
+  ],
+  "overrides": [],
+  "plugins": ["@typescript-eslint", "import"],
+  "settings": {},
+  "ignorePatterns": [],
+  "rules": {
+    "@typescript-eslint/lines-between-class-members": "off"
+  }
 }
