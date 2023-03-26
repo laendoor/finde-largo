@@ -1,20 +1,13 @@
-import express, { Express, Request, Response } from 'express';
+import express from 'express';
 import dotenv from 'dotenv';
+import apiRouter from './api-router';
 
 dotenv.config();
 
-const app: Express = express();
-const name = process.env.npm_package_name;
-const version = process.env.npm_package_version;
+const app = express();
 const port = Number.parseInt(process.env.PORT || '3000', 10);
 
-app.get('/', (req: Request, res: Response) => {
-  res.json('TBD');
-});
-
-app.get('/info', async (req, res) => {
-  res.send(`${name}@${version}`);
-});
+app.use('/api/v1', apiRouter);
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console
