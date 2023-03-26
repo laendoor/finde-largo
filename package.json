@@ -1,51 +1,52 @@
 {
-	"name": "finde-largo",
-	"version": "1.0.0-rc.1",
-	"description": "Finde Largo API",
-	"author": "Laendor <leandro.jdl@gmail.com>",
-	"license": "ISC",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/laendoor/finde-largo.git"
-	},
-	"bugs": {
-		"url": "https://github.com/laendoor/finde-largo/issues"
-	},
-	"homepage": "https://github.com/laendoor/finde-largo#readme",
-	"main": "src/index.ts",
-	"engines": {
-		"node": ">=18.15.0"
-	},
-	"scripts": {
-		"dev": "ts-node src/index.ts",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint --ext .js,.ts ./src",
-		"prepare": "husky install"
-	},
-	"dependencies": {
-		"dotenv": "16.0.3",
-		"express": "4.18.2"
-	},
-	"devDependencies": {
-		"@types/express": "4.17.17",
-		"@types/node": "18.15.10",
-		"@typescript-eslint/eslint-plugin": "5.56.0",
-		"@typescript-eslint/parser": "5.56.0",
-		"eslint": "8.36.0",
-		"eslint-config-airbnb-base": "15.0.0",
-		"eslint-config-airbnb-typescript": "17.0.0",
-		"eslint-config-prettier": "8.8.0",
-		"eslint-plugin-import": "2.27.5",
-		"eslint-plugin-jest": "27.2.1",
-		"husky": "8.0.3",
-		"jest": "29.5.0",
-		"lint-staged": "13.2.0",
-		"prettier": "2.8.7",
-		"ts-node": "10.9.1",
-		"typescript": "5.0.2"
-	},
-	"lint-staged": {
-		"*.{js,ts,.json,.md}": "prettier --write",
-		"*.{js,ts}": "eslint --fix"
-	}
+  "name": "finde-largo",
+  "version": "1.0.0-rc.1",
+  "description": "Finde Largo API",
+  "author": "Laendor <leandro.jdl@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laendoor/finde-largo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/laendoor/finde-largo/issues"
+  },
+  "homepage": "https://github.com/laendoor/finde-largo#readme",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=18.15.0"
+  },
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js,.ts ./src ./__tests__",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "express": "4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.17",
+    "@types/jest": "29.5.0",
+    "@types/node": "18.15.10",
+    "@typescript-eslint/eslint-plugin": "5.56.0",
+    "@typescript-eslint/parser": "5.56.0",
+    "eslint": "8.36.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jest": "27.2.1",
+    "husky": "8.0.3",
+    "jest": "29.5.0",
+    "lint-staged": "13.2.0",
+    "prettier": "2.8.7",
+    "ts-node": "10.9.1",
+    "typescript": "5.0.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,.json,.md}": "prettier --write",
+    "*.{js,ts}": "eslint --fix"
+  }
 }
