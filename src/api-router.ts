@@ -1,4 +1,5 @@
 import express from 'express';
+import LongWeekendController from './long-weekend.controller';
 
 const apiRouter = express.Router();
 const name = process.env.npm_package_name;
@@ -10,5 +11,7 @@ apiRouter.get('/', (req, res) => {
     usage: 'GET /api/v1/{year}',
   });
 });
+
+apiRouter.get('/:year', LongWeekendController.longWeekends);
 
 export default apiRouter;
