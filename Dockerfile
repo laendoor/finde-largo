@@ -27,4 +27,5 @@ WORKDIR /app
 
 COPY --from=prod /app/ /app/
 
+# ENTRYPOINT [ "bash" ]
 CMD [ "yarn", "start" ]
